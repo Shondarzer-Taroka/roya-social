@@ -11,3 +11,16 @@
     text-decoration: none;
     color: #344054;
 }
+
+.navBtn{
+    padding: 8px 12px ;
+    outline: none;
+    border: none;
+    background:transparent;
+}
+
+.navBtn:nth-child(1){
+    
+    border-radius: 50%;
+    border: 1px solid #D0D5DD;
+}
