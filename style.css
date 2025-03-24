@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+
+.linkContailer ul{
+    list-style-type: none;
+}
+
+.linkContailer ul li a{
+    text-decoration: none;
+    color: #344054;
+}
