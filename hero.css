@@ -1,5 +1,4 @@
-
-.contentImageContainer{
+.contentImageContainer {
     height: 388px;
     display: flex;
 }
@@ -21,22 +20,27 @@
     border-radius: 15px;
     font-size: 14px;
 }
+
 .badge img {
     width: 12px;
     margin-right: 5px;
 }
+
 h1 {
     font-size: 24px;
     margin: 15px 0;
 }
+
 .highlight {
     color: #8a2be2;
     font-weight: bold;
 }
+
 .price {
     color: red;
     font-weight: bold;
 }
+
 p {
     color: gray;
     font-size: 14px;
@@ -51,10 +55,12 @@ p {
     cursor: pointer;
     font-size: 14px;
 }
+
 .btn-primary {
     background: #8a2be2;
     color: white;
 }
+
 .btn-secondary {
     border: 1px solid #8a2be2;
     color: #8a2be2;
@@ -75,23 +81,39 @@ p {
 .poster-container {
     display: flex;
     gap: 20px;
-   
+
     justify-content: center;
     margin-bottom: 30px;
-   max-width: 560px;
+    max-width: 560px;
 }
+
 .poster {
-    background: #3d021f;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 300px;
+    
+    position: relative;
 }
+
+.play {
+    position: absolute;
+    font-size: 30px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.409);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
 .poster img {
     width: 100%;
     border-radius: 10px;
 }
+
 .play-btn {
     position: absolute;
     top: 50%;
@@ -108,6 +130,7 @@ p {
     font-size: 20px;
     cursor: pointer;
 }
+
 .social-container {
     background: white;
     padding: 15px;
@@ -116,21 +139,25 @@ p {
     text-align: center;
     max-width: 500px;
 }
+
 .social-title {
     font-size: 16px;
     margin-bottom: 10px;
 }
+
 .social-icons {
     display: flex;
     justify-content: center;
     gap: 15px;
 }
+
 .social-icons img {
     width: 35px;
     height: 35px;
     cursor: pointer;
     transition: transform 0.3s;
 }
+
 .social-icons img:hover {
     transform: scale(1.1);
 }
@@ -141,6 +168,7 @@ p {
         flex-direction: column;
         align-items: center;
     }
+
     .poster {
         max-width: 90%;
     }
