@@ -1,42 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0 auto;
     max-width: 1200px;
-    
+    font-family: 'Poppins', sans-serif;
 }
 
-.linkContailer ul{
+.linkContailer ul {
     list-style-type: none;
     display: flex;
     gap: 16px;
 }
 
-.linkContailer ul li a{
+.linkContailer ul li a {
     text-decoration: none;
     color: #344054;
 }
 
-.navBtn{
-    padding: 8px 12px ;
+.navBtn {
+    padding: 8px 12px;
     outline: none;
     border: none;
-    background:transparent;
+    background: transparent;
 }
 
-.navBtn:nth-child(1){
+.navBtn:nth-child(1) {
     border-radius: 24px;
     border: 1px solid #D0D5DD;
 }
 
-.navBtn:nth-child(2){
+.navBtn:nth-child(2) {
     border-radius: 24px;
     border: 1px solid #A657E7;
     color: #A657E7;
 }
 
-nav .navContainer{
+nav .navContainer {
     display: flex;
     justify-content: space-between;
     gap: 16px;
