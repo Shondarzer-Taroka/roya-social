@@ -1,16 +1,16 @@
 
-
 .wrapper {
     display: flex;
+    flex-direction: column; /* Default for small screens */
     align-items: center;
-    justify-content: space-between;
     padding: 20px;
     background-color: #fff;
     border: 1px solid #e0e0e0;
 }
 
 .header-text {
-    flex: 1;
+    text-align: center;
+    margin-bottom: 20px; /* Space between text and logos for small screens */
 }
 
 .header-text h2 {
@@ -26,21 +26,24 @@
 
 .logo-gallery {
     display: flex;
-    flex: 2;
-    justify-content: space-around;
+    flex-wrap: wrap; /* Allows logos to wrap on smaller screens */
+    justify-content: center;
     align-items: center;
+    gap: 15px; /* Adds spacing between logo cards */
 }
 
 .logo-card {
     display: flex;
+    flex-direction: column; /* Icons and text stack for smaller screens */
     align-items: center;
     transition: transform 0.3s ease;
+    text-align: center;
 }
 
 .logo-card i {
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: #333;
-    margin-right: 10px;
+    margin-bottom: 5px; /* Space between icon and text */
 }
 
 .logo-card span {
@@ -51,4 +54,47 @@
 .logo-card:hover {
     transform: scale(1.1);
     color: #007bff; /* Adds a hover effect to text/icon color */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and small laptops (768px and up) */
+@media (min-width: 768px) {
+    .wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-text {
+        flex: 1;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .logo-gallery {
+        flex: 2;
+        justify-content: space-around;
+    }
+
+    .logo-card {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+
+    .logo-card i {
+        margin-bottom: 0;
+        margin-right: 10px; /* Icon to the left of text */
+    }
+}
+
+/* Laptops and desktops (1024px and up) */
+@media (min-width: 1024px) {
+    .logo-card i {
+        font-size: 2em; /* Slightly larger icons */
+    }
+
+    .logo-card span {
+        font-size: 1.1em; /* Slightly larger text */
+    }
 }
